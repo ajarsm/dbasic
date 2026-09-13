@@ -1,0 +1,96 @@
+KALL INNOVATIONS TOOLCHAIN LICENCE
+Version 1.0, 12 September 2026
+
+This licence covers the d/Python and d/BASIC toolchains distributed by
+Kall Innovations, LLC ("Kall Innovations"): the compilers, the runtimes, the
+command-line tools, the browser (WebAssembly) bundles, the bundled examples and
+documentation, and every other file in the archive this licence accompanies
+(together, the "Software").
+
+By downloading, installing or using the Software you agree to these terms. If
+you do not agree, do not use the Software.
+
+1. WHAT YOU MAY DO
+
+   Kall Innovations grants you a free, worldwide, non-exclusive, non-transferable
+   licence to install and use the Software, on any number of computers, to
+   develop, build, test, run and distribute your own programs. Personal,
+   educational and commercial use are all permitted at no charge.
+
+2. WHAT YOU BUILD IS YOURS
+
+   Programs, source code, compiled bytecode (.dbc), libraries (.dbl), packages
+   (.dapp), assets and anything else you create with the Software are yours.
+   Kall Innovations claims no ownership of them and attaches no conditions to
+   them: you owe no royalty, need give no attribution, and may distribute what
+   you build under any terms you choose, including commercial and closed terms.
+
+3. THE REDISTRIBUTABLE RUNTIME
+
+   The browser bundle (the WebAssembly compiler and runtime modules, their
+   JavaScript loaders and font assets) is redistributable: you may include an
+   unmodified copy of it in your own website, application or product so that
+   your users can run programs built with the Software, provided the copyright
+   and third-party notices in the bundle remain intact. This does not permit
+   distributing the bundle on its own or as part of a competing toolchain.
+
+4. WHAT YOU MAY NOT DO
+
+   Except as stated in section 3, you may not:
+   (a) copy, redistribute, sell, rent, lease, sublicense or host the Software
+       for others;
+   (b) modify, adapt, translate or create derivative works of the Software;
+   (c) reverse engineer, decompile or disassemble the Software, or otherwise
+       attempt to derive its source code, except to the extent that applicable
+       law expressly permits despite this restriction;
+   (d) remove or alter any copyright, trademark or third-party notice; or
+   (e) use the Software to build a product whose primary purpose is to replace
+       the Software.
+
+5. THIRD-PARTY COMPONENTS
+
+   The Software includes components from other authors, each under its own
+   licence, listed in the third_party directory of the archive: among them the
+   RustPython parser (MIT Licence), a translation of CPython's sorting algorithm
+   (Python Software Foundation Licence Version 2) and fonts under the SIL Open
+   Font Licence. Those licences govern those components and their notices must
+   be preserved. Nothing in this licence restricts rights those licences grant.
+
+6. TRADEMARKS
+
+   "d/Python", "d/BASIC", "d/OS" and "Kall Innovations" are trademarks of Kall
+   Innovations. This licence grants no right to use them except to state,
+   truthfully, that your program was built with the Software. "Python" is a
+   trademark of the Python Software Foundation; the Software is not affiliated
+   with or endorsed by the PSF.
+
+7. NO WARRANTY
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. The Software is
+   pre-release software; features, formats and behaviour may change between
+   versions.
+
+8. LIMITATION OF LIABILITY
+
+   TO THE FULLEST EXTENT PERMITTED BY LAW, KALL INNOVATIONS SHALL NOT BE LIABLE
+   FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR EXEMPLARY
+   DAMAGES ARISING FROM THE USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF
+   ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+9. TERM
+
+   This licence continues until you breach it, at which point it ends
+   automatically; sections 2, 5, 7 and 8 survive. Kall Innovations may publish
+   later versions of the Software under different terms; this licence continues
+   to govern the version it accompanies.
+
+10. GENERAL
+
+   This licence is the entire agreement about the Software. If any part of it is
+   unenforceable, the rest remains in force. It is governed by the laws of the
+   jurisdiction in which Kall Innovations, LLC is organised, without regard to
+   conflict-of-law rules.
+
+Copyright (c) 2026 Kall Innovations, LLC. All rights reserved.
