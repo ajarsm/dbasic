@@ -10,6 +10,47 @@ desktop, and on the 8-bit home computers d/OS runs on. Line numbers welcome.
 
 This repository holds the downloadable releases only. The source is not published.
 
+## Quick start
+
+Download the kit for your machine from [Releases](../../releases), unpack it, and open a
+terminal inside the folder. The folder is self-contained and can live anywhere;
+`bin/dbasic` is the compiler, the runtime and the window host in one.
+
+**macOS** (the kit is not yet notarized; the first command clears the download flag):
+
+```
+xattr -dr com.apple.quarantine .
+./bin/dbasic run examples/oop-window-hello.bas   # opens a window
+```
+
+**Linux** (the runtime links ALSA for sound):
+
+```
+sudo apt install libasound2t64                   # or libasound2 on older releases
+./bin/dbasic run examples/oop-sombrero.bas
+```
+
+**Windows** (PowerShell or Command Prompt):
+
+```
+.\bin\dbasic.exe run examples\oop-sombrero.bas
+```
+
+Write `hello.bas`, run it, compile it, run the compiled file:
+
+```
+./bin/dbasic run hello.bas                       # compile in memory and run
+./bin/dbasic build hello.bas -o out/hello.dbc    # compile to a program file
+./bin/dbasic exec out/hello.dbc                  # run the compiled program
+```
+
+`IMPORT dworks.widgets` and `IMPORT gx` compile the widget and game libraries in from
+`libraries/`. What works where in this release: macOS has console programs, `INPUT`,
+native windows, d/Works widgets, GX, copy/paste, drag and drop, files, sound and
+network; Linux has console programs, `INPUT`, files, sound and network (window host to
+come); Windows has console programs, files and network (`INPUT` and the window host to
+come).
+
 ## Downloads
 
 Each release carries:
