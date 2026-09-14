@@ -47,9 +47,20 @@ Write `hello.bas`, run it, compile it, run the compiled file:
 `IMPORT dworks.widgets` and `IMPORT gx` compile the widget and game libraries in from
 `libraries/`. What works where in this release: macOS has console programs, `INPUT`,
 native windows, d/Works widgets, GX, copy/paste, drag and drop, files, sound and
-network; Linux has console programs, `INPUT`, files, sound and network (window host to
-come); Windows has console programs, files and network (`INPUT` and the window host to
-come).
+network; Linux has console programs, `INPUT`, native windows, d/Works widgets, GX,
+files, sound and network; Windows has console programs, native windows, d/Works
+widgets, GX, files and network (`INPUT` to come). Native windows need a display;
+copy/paste and drag and drop with other applications are macOS-only for now.
+
+## Editor support
+
+`dbasic-0.1.0.vsix` on the [Releases](../../releases) page is a Visual Studio Code
+extension: highlighting, diagnostics, formatting, symbols, go-to-definition, rename,
+hover, completion and Build/Run/Trace tasks. Install it from the file (Command
+Palette → **Extensions: Install from VSIX...**), then point `dbasic.server.path` at the
+kit's `bin/dbasic` (`bin\dbasic.exe` on Windows) or put that `bin` on your `PATH`. The
+language server is the compiler itself, so what the editor says is what `build` says.
+One `.vsix` serves macOS, Windows and Linux.
 
 ## Downloads
 
@@ -58,9 +69,10 @@ Each release carries:
 | Archive | What it is |
 | --- | --- |
 | `dbasic-<version>-macos-universal.zip` | the `dbasic` compiler, runtime and window host, universal (Apple silicon and Intel), with the d/Works widget and GX game libraries and the examples |
-| `dbasic-<version>-linux-x64.tar.gz` | the same kit for Linux x86-64 (console programs today; window hosts to come) |
-| `dbasic-<version>-windows-x64.zip` | the same kit for Windows x86-64 (console programs today; window hosts to come) |
+| `dbasic-<version>-linux-x64.tar.gz` | the same kit for Linux x86-64 |
+| `dbasic-<version>-windows-x64.zip` | the same kit for Windows x86-64 |
 | `dbasic-<version>-wasm.zip` | the compiler and runtime as WebAssembly with the playground page, for embedding in your own site |
+| `dbasic-<version>.vsix` | the Visual Studio Code extension, installed from the file; needs one of the kits above for its language server |
 
 Every archive has a `manifest.json` with the source commit and the SHA-256 of every
 file, and the release notes list the SHA-256 of each archive.
