@@ -52,6 +52,31 @@ files, sound and network; Windows has console programs, native windows, d/Works
 widgets, GX, files and network (`INPUT` to come). Native windows need a display;
 copy/paste and drag and drop with other applications are macOS-only for now.
 
+## The applications
+
+Every kit's `apps/` folder has the five d/BASIC applications as compiled programs,
+ready to run:
+
+| application | what it is | source |
+| --- | --- | --- |
+| Calculator | a d/Works calculator | included |
+| d/Calc | a spreadsheet | included |
+| d/Write | a document editor | included |
+| Cantor | a 1-bit adventure in seven cantos | program only |
+| Star Commander | a space-combat game | program only |
+
+```
+./bin/dbasic exec apps/calculator/CALC-W16.DBC
+./bin/dbasic exec --data-mount apps/dcalc/data apps/dcalc/D-CALC.DBC
+./bin/dbasic exec --data-mount apps/dwrite/data apps/dwrite/D-WRITE.DBC
+./bin/dbasic exec --file-mount apps/cantor/files apps/cantor/CANTOR.DBC
+./bin/dbasic exec apps/star-commander/STARCMDR.DBC
+```
+
+`--data-mount` names the folder d/Calc and d/Write save into (the kit ships an empty
+one); `--file-mount` names the folder Cantor's pictures, sound and saved games live in.
+The games need a machine with audio output.
+
 ## Editor support
 
 `dbasic-0.1.0.vsix` on the [Releases](../../releases) page is a Visual Studio Code
@@ -68,7 +93,7 @@ Each release carries:
 
 | Archive | What it is |
 | --- | --- |
-| `dbasic-<version>-macos-universal.zip` | the `dbasic` compiler, runtime and window host, universal (Apple silicon and Intel), with the d/Works widget and GX game libraries and the examples |
+| `dbasic-<version>-macos-universal.zip` | the `dbasic` compiler, runtime and window host, universal (Apple silicon and Intel), with the d/Works widget and GX game libraries, the examples and the five applications |
 | `dbasic-<version>-linux-x64.tar.gz` | the same kit for Linux x86-64 |
 | `dbasic-<version>-windows-x64.zip` | the same kit for Windows x86-64 |
 | `dbasic-<version>-wasm.zip` | the compiler and runtime as WebAssembly with the playground page, for embedding in your own site |
